@@ -6,3 +6,5 @@
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
 
 .sector-card p,.future-list li{font-size:16px;line-height:1.9}.history-city>p,.event p{font-size:15px}.scatter-dot{cursor:pointer}.map-panel .panel-head small{font-size:11px}
+
+.bubble .dot.unknown{fill:none;stroke:#8b9ab0;opacity:1}
