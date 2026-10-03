@@ -1,0 +1,18 @@
+'use strict';
+const existingRender=render;
+render=function(){destroyPositionMap();existingRender();if(state.view==='facets')initPositionMap();};
+const existingFacets=window.facetsView;
+window.facetsView=function(){return existingFacets()+positionPanel(selected());};
+const existingDetail=detail;
+detail=function(){return existingDetail().replace('<div class="detail-actions">',`${bookmarkButton('city',state.city)}<div class="detail-actions">`).replace('<button class="detail-facets" data-open-map>手绘地图</button>','<button class="detail-facets" data-open-map>手绘地图</button><button class="detail-facets" data-open-position>真实位置</button>');};
+const existingWalk=walkView;
+walkView=function(){return existingWalk()+routeTravel();};
+const existingLens=lensView;
+lensView=function(){const c=selected();return existingLens()+`<section class="panel inner" style="margin-top:22px"><h2>收藏正在比较的片区</h2><div class="lens-bookmarks">${playground.areas.map(i=>`<article><h3>${c.name} · ${esc(PLAY_DATA[c.id].areas[i][0])}</h3>${bookmarkButton('area',c.id+':'+i)}</article>`).join('')}</div><button class="text-btn" data-view="archive">查看我的档案</button></section>`;};
+const originalSource=sourceView;
+sourceView=function(){const original=originalSource();const legacy=original.slice(original.indexOf('<section class="panel source-card"><h2>信息类型'));return `<section class="panel source-card"><div class="kicker">2025 + 2024 / 版本与范围</div><h2>十城经济、四季与关系</h2><p>本站以原有2024年GDP前十城市作为固定探索样本；2025年这十城的规模排序保持一致。总览支持切换2024／2025年，产业结构与经济图表同步切换。人口使用年末常住人口，收入使用全年全体居民人均可支配收入，不以城镇或户籍人口替代。2024年广州全体居民收入、成都补充指标暂缺。</p><p>本次读取公开GitHub资料库里的地方统计公报转载存档，未直接访问统计局原站。2025数据为初步统计，后续可能修订；没有用年末人口自行推算人均GDP。整理日期为2026年10月3日。</p><div class="scroll-table"><table class="compare-table"><thead><tr><th>城市</th><th>2025 GDP / 亿元</th><th>实际增速</th><th>常住人口 / 万人</th><th>全年人均可支配收入 / 元</th><th>原发布机构与转载日期</th><th>证据</th></tr></thead><tbody>${CITIES.map(c=>{const d=ECONOMY_2025[c.id];return `<tr><td>${c.name}</td><td>${fmt(d.gdp)}</td><td>${d.growth}%</td><td>${fmt(d.population)}</td><td>${fmt(d.income,0)}</td><td>${esc(d.publisher)}<br>${esc(d.published)}</td><td><a href="${esc(d.sourceUrl)}" target="_blank" rel="noopener noreferrer">本次存档</a><br><a href="${esc(d.mirrorUrl)}" target="_blank" rel="noopener noreferrer">公报转载</a></td></tr>`;}).join('')}</tbody></table></div><a href="economy-evidence.json">经济字段与原文摘录</a></section><section class="panel source-card"><h2>气候与准确位置</h2><p>气候日历的站点存档来自Wikipedia公开抓取资料，统计期逐城显示；部分城市或指标暂缺。存档来源采用Wikipedia CC BY-SA署名，具体记录见气候页面与<a href="climate-evidence.json">气候数据档案</a>。缺失值没有插值，也没有借用邻城。</p><p>在线统一基准调用Open-Meteo ERA5历史接口，计算1991—2020年的月平均气温、月降水和日照平均总量；这是格点再分析资料，与站点实测存在差异。来源署名Open-Meteo / ECMWF ERA5，CC BY 4.0，日照为模型估算。天气服务失败时保留已有存档。</p><p>手绘图仍是概念示意。真实位置底图使用OpenStreetMap（ODbL）；地点查询使用Nominatim公开服务，结果需要核对具体院区和入口。高德入口发送地点名称，避免混用WGS84与高德坐标。步行和交通片段为编辑建议，未计算导航距离或耗时。<a href="vendor/leaflet-LICENSE.txt">Leaflet许可</a></p></section><section class="panel source-card"><h2>关系图与个人档案</h2><p>城市群图是固定十城范围内的定性关系，连线、粗细与节点布局均不量化交易、人才、客流或地理距离。产业方向沿用城市档案，区域规划链接供进一步阅读，未据其推断个人使用资格。</p><p>个人收藏、预算、偏好和漫游进度按登录账户保存。云端更新使用版本检查，另一设备先保存时会暂停覆盖并要求重新读取。网络或存储失败时保留本页输入。当前城市、偏好档位和试算结果都不能代替实地与政策核对。</p></section>${legacy}`;};
+// Keep the original 2024 evidence table on its own vintage even after switching current charts.
+const newSource=sourceView;
+sourceView=function(){const year=state.vintage;applyVintage(2024);state.vintage=2024;try{return newSource();}finally{state.vintage=year;applyVintage(year);}};
+window.renderExtra=function(v){return ({climate:climateView,clusters:clustersView,archive:archiveView,play:playView,facets:facetsView,industry:industryView,living:livingView,history:historyView,future:futureView,sources:sourceView})[v]();};
+render();

@@ -1,0 +1,24 @@
+import assert from 'node:assert/strict';
+import { randomUUID } from 'node:crypto';
+import worker from '../dist/server/index.js';
+const base=process.env.ATLAS_TEST_URL||'http://127.0.0.1:8787';
+const cities=['shanghai','beijing','shenzhen','chongqing','guangzhou','suzhou','chengdu','hangzhou','wuhan','nanjing'];
+const profile={version:1,favorites:{cities:['shanghai'],areas:['shanghai:0'],routes:['shanghai:history']},snapshot:{city:'shanghai',view:'play',vintage:2025,playMode:'life',compare:['shanghai','beijing'],weights:[30,25,20,10,15],life:{income:18000,daily:3000,travel:300,reserve:1200,family:'child',job:'digital',limit:45,rents:Object.fromEntries(cities.map(c=>[c,3500])),commutes:Object.fromEntries(cities.map(c=>[c,45]))},walk:{theme:'history',pace:'full',stop:2,checked:['shanghai:history:0']},areas:[0,1],focus:'family',climate:{month:9,metric:'temp',min:15,max:25,rain:100}}};
+const userA='test-'+randomUUID(),userB='test-'+randomUUID();
+async function req(user,method='GET',body,more={}){return fetch(base+'/api/archive',{method,headers:{'oai-authenticated-user-id':user,'Content-Type':'application/json',...more},...(body?{body:JSON.stringify(body)}:{})});}
+assert.equal(typeof worker.fetch,'function');
+assert.equal((await fetch(base+'/api/archive',{headers:{'x-preview-anonymous':'1'}})).status,401);
+assert.equal((await (await req(userA)).json()).profile,null);
+assert.equal((await req(userA,'PUT',{revision:0,profile})).status,200);
+assert.equal((await (await req(userB)).json()).profile,null,'another identity must not see saved records');
+assert.deepEqual((await (await req(userA)).json()).profile,profile,'D1 must return saved input unchanged');
+const simultaneous=await Promise.all([req(userA,'PUT',{revision:1,profile}),req(userA,'PUT',{revision:1,profile})]);
+assert.deepEqual(simultaneous.map(r=>r.status).sort(),[200,409],'only one writer may update the same revision');
+assert.equal((await req(userA,'PUT',{revision:2,profile:{...profile,favorites:{cities:['foreign-city'],areas:[],routes:[]}}})).status,400);
+assert.equal((await req(userA,'PUT',{revision:2,profile},{Origin:'https://unrelated.example'})).status,403);
+assert.equal((await req(userA,'POST',{})).status,405);
+assert.equal((await req(userA,'PUT',{revision:2,profile},{'Content-Type':'text/plain'})).status,415);
+assert.equal((await req(userA,'PUT',{revision:2,profile,excess:'a'.repeat(70000)})).status,413);
+const missing=await worker.fetch(new Request('https://example.test/api/archive',{headers:{'oai-authenticated-user-id':'test-user'}}),{});
+assert.equal(missing.status,503,'missing persistence must be explicit, not a fake successful save');
+console.log('PASS: authenticated isolation, D1 round trip, concurrent revision conflict, validation, origin, body limit and unavailable storage.');

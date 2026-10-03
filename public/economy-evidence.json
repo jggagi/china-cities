@@ -1,0 +1,362 @@
+{
+  "reviewed": "2026-10-03",
+  "method": "Read public GitHub archives of official-bulletin reprints, not direct government access. Sector percentages calculated from disclosed value-added. No GDP per capita calculated from year-end population. Income is annual all-resident per-capita disposable income, not monthly salary.",
+  "records": {
+    "shanghai": {
+      "title": "2025年上海市国民经济和社会发展统计公报",
+      "publisher": "上海市统计局",
+      "mirror": "https://www.crei.cn/file/br.aspx?id=20260330170013&x=0&op=z4",
+      "archive": "https://github.com/chenfei2008c/china-local-debt-atlas/blob/a2d99de111863a75afe644747972b155a518bb4b/raw/province_fiscal/crei/city_bulletin_snapshot.json",
+      "published": "20260330",
+      "incomeExcerpt": "四、人民生活和社会保障 据抽样调查，全年全市居民人均可支配收入91987元，比上年增长4.1%（见图3）。其中，城镇常住居民人均可支配收入96842元，增长4.0%；农村常住居民人均可支配收入48122元，增长5.4%。全市居民人均消",
+      "populationExcerpt": "增都市运动中心7个。 十三、人口和就业 至年末，全市常住人口为2485.41万人。其中，户籍常住人口1510.91万人，外来常住人口974.50万人。全年常住人口出生10.7万人，出生率为4.31‰；",
+      "sectorAmounts": [
+        99.39,
+        11650.62,
+        44958.7
+      ],
+      "values": {
+        "gdp": 56708.71,
+        "growth": 5.4,
+        "population": 2485.41,
+        "income": 91987,
+        "sectors": [
+          0.18,
+          20.54,
+          79.28
+        ],
+        "sourceUrl": "https://github.com/chenfei2008c/china-local-debt-atlas/blob/a2d99de111863a75afe644747972b155a518bb4b/raw/province_fiscal/crei/city_bulletin_snapshot.json",
+        "mirrorUrl": "https://www.crei.cn/file/br.aspx?id=20260330170013&x=0&op=z4",
+        "published": "20260330",
+        "evidenceNote": "2025年统计公报的公开转载存档；初步统计，可能修订。",
+        "publisher": "上海市统计局"
+      }
+    },
+    "beijing": {
+      "title": "北京市2025年国民经济和社会发展统计公报",
+      "publisher": "北京市统计局",
+      "mirror": "https://www.crei.cn/file/br.aspx?id=20260325101800&x=0&op=z4",
+      "archive": "https://github.com/chenfei2008c/china-local-debt-atlas/blob/a2d99de111863a75afe644747972b155a518bb4b/raw/province_fiscal/crei/city_bulletin_snapshot.json",
+      "published": "20260325",
+      "incomeExcerpt": "/百亿元。 十、人民生活和社会保障 全年全市居民人均可支配收入89090元，比上年增长4.3%，扣除价格因素实际增长4.4%。从四项收入构成看，居民人均工资性收入57376元，增长4.9%；人均经营净收入1109元，增长3.2%；人均",
+      "populationExcerpt": "21―2025年地区生产总值及增长速度 年末全市常住人口[4]2180.0万人，比上年末减少3.2万人。其中，城镇人口1924.9万人，占常住人口的比重为88.3%。常住人口出生率为5.55‰，死亡",
+      "sectorAmounts": [
+        109.2,
+        7187.4,
+        44776.9
+      ],
+      "values": {
+        "gdp": 52073.4,
+        "growth": 5.4,
+        "population": 2180.0,
+        "income": 89090,
+        "sectors": [
+          0.21,
+          13.8,
+          85.99
+        ],
+        "sourceUrl": "https://github.com/chenfei2008c/china-local-debt-atlas/blob/a2d99de111863a75afe644747972b155a518bb4b/raw/province_fiscal/crei/city_bulletin_snapshot.json",
+        "mirrorUrl": "https://www.crei.cn/file/br.aspx?id=20260325101800&x=0&op=z4",
+        "published": "20260325",
+        "evidenceNote": "2025年统计公报的公开转载存档；初步统计，可能修订。",
+        "publisher": "北京市统计局"
+      }
+    },
+    "shenzhen": {
+      "title": "深圳市2025年国民经济和社会发展统计公报",
+      "publisher": "深圳市统计局",
+      "mirror": "https://www.crei.cn/file/br.aspx?id=20260820094015&x=0&op=z4",
+      "archive": "https://github.com/chenfei2008c/china-local-debt-atlas/blob/a2d99de111863a75afe644747972b155a518bb4b/raw/province_fiscal/crei/city_bulletin_snapshot.json",
+      "published": "20260820",
+      "incomeExcerpt": "8%。 九、居民收入消费和社会保障 全年全市居民人均可支配收入84945元，比上年增长4.7%。居民人均消费支出53548元，增长4.2%。全市居民恩格尔系数为29.2%，与上年持平。 t2.png 图2 2025年全市居民人均消费支",
+      "populationExcerpt": "值213763元，比上年增长4.1%。 全市年末常住人口1824.85万人，比上年末增加25.90万人。其中，城镇常住人口1820.96万人，占常住人口的比重为99.79%。 全年居民消费价格比",
+      "sectorAmounts": [
+        28.04,
+        14482.54,
+        24221.22
+      ],
+      "values": {
+        "gdp": 38731.8,
+        "growth": 5.5,
+        "population": 1824.85,
+        "income": 84945,
+        "sectors": [
+          0.07,
+          37.39,
+          62.54
+        ],
+        "sourceUrl": "https://github.com/chenfei2008c/china-local-debt-atlas/blob/a2d99de111863a75afe644747972b155a518bb4b/raw/province_fiscal/crei/city_bulletin_snapshot.json",
+        "mirrorUrl": "https://www.crei.cn/file/br.aspx?id=20260820094015&x=0&op=z4",
+        "published": "20260820",
+        "evidenceNote": "2025年统计公报的公开转载存档；初步统计，可能修订。",
+        "publisher": "深圳市统计局"
+      }
+    },
+    "chongqing": {
+      "title": "2025年重庆市国民经济和社会发展统计公报",
+      "publisher": "重庆统计信息网",
+      "mirror": "https://www.crei.cn/file/br.aspx?id=20260326135018&x=0&op=z4",
+      "archive": "https://github.com/chenfei2008c/china-local-debt-atlas/blob/a2d99de111863a75afe644747972b155a518bb4b/raw/province_fiscal/crei/city_bulletin_snapshot.json",
+      "published": "20260326",
+      "incomeExcerpt": "02亿元。 九、居民收入消费和社会保障 全市居民人均可支配收入41580元，比上年增长4.7%。按常住地分，城镇居民人均可支配收入51854元，增长4.2%；农村居民人均可支配收入23448元，增长5.5%。按全市居民五等份收入分组，",
+      "populationExcerpt": "5.4%，占全市经济总量的61.6%。 年末全市常住人口3187.26万人，其中，城镇常住人口2327.34万人。常住人口城镇化率为73.02%，比上年末提高0.88个百分点。 全年出生人口14",
+      "sectorAmounts": [
+        2124.14,
+        11787.74,
+        19846.05
+      ],
+      "values": {
+        "gdp": 33757.93,
+        "growth": 5.3,
+        "population": 3187.26,
+        "income": 41580,
+        "sectors": [
+          6.29,
+          34.92,
+          58.79
+        ],
+        "sourceUrl": "https://github.com/chenfei2008c/china-local-debt-atlas/blob/a2d99de111863a75afe644747972b155a518bb4b/raw/province_fiscal/crei/city_bulletin_snapshot.json",
+        "mirrorUrl": "https://www.crei.cn/file/br.aspx?id=20260326135018&x=0&op=z4",
+        "published": "20260326",
+        "evidenceNote": "2025年统计公报的公开转载存档；初步统计，可能修订。",
+        "publisher": "重庆统计信息网"
+      }
+    },
+    "guangzhou": {
+      "title": "2025年广州市国民经济和社会发展统计公报",
+      "publisher": "广州市统计局",
+      "mirror": "https://www.crei.cn/file/br.aspx?id=20260820093908&x=0&op=z4",
+      "archive": "https://github.com/chenfei2008c/china-local-debt-atlas/blob/a2d99de111863a75afe644747972b155a518bb4b/raw/province_fiscal/crei/city_bulletin_snapshot.json",
+      "published": "20260820",
+      "incomeExcerpt": "6%。 九、人民生活和社会保障 全年广州居民人均可支配收入80591元，比上年增长3.6%。分城乡看，全年城镇居民人均可支配收入86069元，增长3.2%；农村居民人均可支配收入43145元，增长5.5%。 图9 2020-202",
+      "populationExcerpt": "业结构 图1.png 人口总量平稳增长。年末常住人口1910.10万人，比上年末增加12.30万人，城镇化率为87.56%，比上年提升0.32个百分点。年末户籍人口1091.14万人，户籍人",
+      "sectorAmounts": [
+        317.02,
+        7710.27,
+        24012.17
+      ],
+      "values": {
+        "gdp": 32039.46,
+        "growth": 4.0,
+        "population": 1910.1,
+        "income": 80591,
+        "sectors": [
+          0.99,
+          24.06,
+          74.95
+        ],
+        "sourceUrl": "https://github.com/chenfei2008c/china-local-debt-atlas/blob/a2d99de111863a75afe644747972b155a518bb4b/raw/province_fiscal/crei/city_bulletin_snapshot.json",
+        "mirrorUrl": "https://www.crei.cn/file/br.aspx?id=20260820093908&x=0&op=z4",
+        "published": "20260820",
+        "evidenceNote": "2025年统计公报的公开转载存档；初步统计，可能修订。",
+        "publisher": "广州市统计局"
+      }
+    },
+    "suzhou": {
+      "title": "2025年苏州市国民经济和社会发展统计公报",
+      "publisher": "苏州市统计局",
+      "mirror": "https://www.crei.cn/file/br.aspx?id=20260527111820&x=0&op=z4",
+      "archive": "https://github.com/chenfei2008c/china-local-debt-atlas/blob/a2d99de111863a75afe644747972b155a518bb4b/raw/province_fiscal/crei/city_bulletin_snapshot.json",
+      "published": "20260527",
+      "incomeExcerpt": "末增长0.5%。 居民收支增势稳定。全年全体居民人均可支配收入80796元，比上年增长4.2%，其中城镇居民人均可支配收入90125元，增长4.0%；农村居民人均可支配收入51303元，增长4.8%。全体居民人均消费支出50196元，",
+      "populationExcerpt": "亿元。 十一、人口、人民生活和社会保障 年末常住人口1304.77万人，比上年末增长0.5%，常住人口城镇化率达82.9%，比上年提高0.2个百分点。年末户籍总人口798.8万人，比上年末增",
+      "sectorAmounts": [
+        208.9,
+        12844.4,
+        14641.8
+      ],
+      "values": {
+        "gdp": 27695.1,
+        "growth": 5.4,
+        "population": 1304.77,
+        "income": 80796,
+        "sectors": [
+          0.75,
+          46.38,
+          52.87
+        ],
+        "sourceUrl": "https://github.com/chenfei2008c/china-local-debt-atlas/blob/a2d99de111863a75afe644747972b155a518bb4b/raw/province_fiscal/crei/city_bulletin_snapshot.json",
+        "mirrorUrl": "https://www.crei.cn/file/br.aspx?id=20260527111820&x=0&op=z4",
+        "published": "20260527",
+        "evidenceNote": "2025年统计公报的公开转载存档；初步统计，可能修订。",
+        "publisher": "苏州市统计局"
+      }
+    },
+    "chengdu": {
+      "title": "2025年成都市国民经济和社会发展统计公报",
+      "publisher": "成都市统计局",
+      "mirror": "https://www.crei.cn/file/br.aspx?id=20260420165225&x=0&op=z4",
+      "archive": "https://github.com/chenfei2008c/china-local-debt-atlas/blob/a2d99de111863a75afe644747972b155a518bb4b/raw/province_fiscal/crei/city_bulletin_snapshot.json",
+      "published": "20260420",
+      "incomeExcerpt": ".7% 九、居民收入消费和社会保障 全年全体居民人均可支配收入 54363 元 , 比上年增长 4.5%。城镇居民人均可支配收入 59509 元, 增长 4.4%; 其中工资性收入 36511 元, 增长 4.8%; 经营净收入 5789",
+      "populationExcerpt": "产业结构为 4.2:27.7:68.1 年末常住人口 2153.5 万人, 比上年末增加 6.1 万人。其中 ,城镇常住人口 1754.2 万人, 常住人口城镇化率 81.46%, 比上年末提",
+      "sectorAmounts": [
+        541.1,
+        6903.9,
+        17318.6
+      ],
+      "values": {
+        "gdp": 24763.6,
+        "growth": 5.8,
+        "population": 2153.5,
+        "income": 54363,
+        "sectors": [
+          2.19,
+          27.88,
+          69.94
+        ],
+        "sourceUrl": "https://github.com/chenfei2008c/china-local-debt-atlas/blob/a2d99de111863a75afe644747972b155a518bb4b/raw/province_fiscal/crei/city_bulletin_snapshot.json",
+        "mirrorUrl": "https://www.crei.cn/file/br.aspx?id=20260420165225&x=0&op=z4",
+        "published": "20260420",
+        "evidenceNote": "2025年统计公报的公开转载存档；初步统计，可能修订。",
+        "publisher": "成都市统计局"
+      }
+    },
+    "hangzhou": {
+      "title": "2025年杭州市国民经济和社会发展统计公报",
+      "publisher": "杭州市统计局",
+      "mirror": "https://www.crei.cn/file/br.aspx?id=20260527165710&x=0&op=z4",
+      "archive": "https://github.com/chenfei2008c/china-local-debt-atlas/blob/a2d99de111863a75afe644747972b155a518bb4b/raw/province_fiscal/crei/city_bulletin_snapshot.json",
+      "published": "20260527",
+      "incomeExcerpt": "和社会保障 根据城乡一体化住户调查，全年全体居民人均可支配收入80017元，比上年增长4.2%。按常住地分，城镇居民人均可支配收入86640元，增长3.9%；农村居民人均可支配收入53565元，增长5.4%。城乡居民人均可支配收入比值",
+      "populationExcerpt": " 据2025年1%人口抽样调查数据推算，年末全市常住人口1270.0万人，比上年末增加7.6万人。其中，城镇人口1083.9万人，占常住人口的85.3%。男性人口658.8万人，占总人口的51",
+      "sectorAmounts": [
+        383.0,
+        5631.0,
+        16997.0
+      ],
+      "values": {
+        "gdp": 23011.0,
+        "growth": 5.2,
+        "population": 1270.0,
+        "income": 80017,
+        "sectors": [
+          1.66,
+          24.47,
+          73.86
+        ],
+        "sourceUrl": "https://github.com/chenfei2008c/china-local-debt-atlas/blob/a2d99de111863a75afe644747972b155a518bb4b/raw/province_fiscal/crei/city_bulletin_snapshot.json",
+        "mirrorUrl": "https://www.crei.cn/file/br.aspx?id=20260527165710&x=0&op=z4",
+        "published": "20260527",
+        "evidenceNote": "2025年统计公报的公开转载存档；初步统计，可能修订。",
+        "publisher": "杭州市统计局"
+      }
+    },
+    "wuhan": {
+      "title": "(湖北省)2025年武汉市国民经济和社会发展统计公报-红黑统计公报库",
+      "publisher": "武汉市统计局",
+      "mirror": "https://tjgb.hongheiku.com/djs/68509.html",
+      "archive": "https://github.com/chenfei2008c/china-local-debt-atlas/blob/a2d99de111863a75afe644747972b155a518bb4b/raw/province_fiscal/hongheiku/city_bulletin_snapshot.json",
+      "published": "2026-04-09",
+      "incomeExcerpt": ".8%。 十一、居民生活和社会保障 全年全市居民人均可支配收入62530元，比上年增长4.7%。按常住地分，城镇居民人均可支配收入67248元，增长4.5%；农村居民人均可支配收入35575元，增长6.1%。全市居民人均消费支出408",
+      "populationExcerpt": "25年三次产业增加值占地区生产总值比重 年末全市常住人口1386.19万人，城镇化率达到85.22%。年末全市户籍人口961.34万人，比上年增长0.5%。全年城镇新增就业29.90万人，比上年",
+      "sectorAmounts": [
+        481.21,
+        6589.72,
+        15076.42
+      ],
+      "values": {
+        "gdp": 22147.35,
+        "growth": 5.6,
+        "population": 1386.19,
+        "income": 62530,
+        "sectors": [
+          2.17,
+          29.75,
+          68.07
+        ],
+        "sourceUrl": "https://github.com/chenfei2008c/china-local-debt-atlas/blob/a2d99de111863a75afe644747972b155a518bb4b/raw/province_fiscal/hongheiku/city_bulletin_snapshot.json",
+        "mirrorUrl": "https://tjgb.hongheiku.com/djs/68509.html",
+        "published": "2026-04-09",
+        "evidenceNote": "2025年统计公报的公开转载存档；初步统计，可能修订。",
+        "publisher": "武汉市统计局"
+      }
+    },
+    "nanjing": {
+      "title": "南京市2025年国民经济和社会发展统计公报",
+      "publisher": "南京市统计局",
+      "mirror": "https://www.crei.cn/file/br.aspx?id=20260518090326&x=0&op=z4",
+      "archive": "https://github.com/chenfei2008c/china-local-debt-atlas/blob/a2d99de111863a75afe644747972b155a518bb4b/raw/province_fiscal/crei/city_bulletin_snapshot.json",
+      "published": "20260518",
+      "incomeExcerpt": "8 亿元。 九、人民生活和社会保障 全年全市居民人均可支配收入 78243 元，比上年增长 4.1% 。其中，工资性收入 49231 元，增长 4.5% ；经营净收入 7865 元，增长 3.9% ；财产净收入 7450 元，增长 1.1",
+      "populationExcerpt": "2220 元，比上年增长 4.7% 。 年末全市常住人口 963.85 万人，比上年末增加 6.15 万人， 同比 增长 0.64% 。其中城镇人口 843.37 万人，占总人口比重（常住人口城镇",
+      "sectorAmounts": [
+        338.5,
+        5873.07,
+        13217.21
+      ],
+      "values": {
+        "gdp": 19428.78,
+        "growth": 5.2,
+        "population": 963.85,
+        "income": 78243,
+        "sectors": [
+          1.74,
+          30.23,
+          68.03
+        ],
+        "sourceUrl": "https://github.com/chenfei2008c/china-local-debt-atlas/blob/a2d99de111863a75afe644747972b155a518bb4b/raw/province_fiscal/crei/city_bulletin_snapshot.json",
+        "mirrorUrl": "https://www.crei.cn/file/br.aspx?id=20260518090326&x=0&op=z4",
+        "published": "20260518",
+        "evidenceNote": "2025年统计公报的公开转载存档；初步统计，可能修订。",
+        "publisher": "南京市统计局"
+      }
+    }
+  },
+  "supplement2024": {
+    "北京市": {
+      "mirror": "https://tjgb.hongheiku.com/sjtjgb/57258.html",
+      "archive": "https://github.com/chenfei2008c/china-local-debt-atlas/blob/a2d99de111863a75afe644747972b155a518bb4b/raw/province_fiscal/hongheiku/city_bulletin_snapshot.json",
+      "published": "2025-03-20",
+      "incomeExcerpt": ".634人/百亿元。 十、人民生活和社会保障 全年全市居民人均可支配收入85415元，比上年增长4.5%，扣除价格因素实际增长4.4%。从四项收入构成看，居民人均工资性收入54670元"
+    },
+    "上海市": {
+      "mirror": "https://tjgb.hongheiku.com/xjtjgb/xj2020/59624.html",
+      "archive": "https://github.com/chenfei2008c/china-local-debt-atlas/blob/a2d99de111863a75afe644747972b155a518bb4b/raw/province_fiscal/hongheiku/city_bulletin_snapshot.json",
+      "published": "2025-04-19",
+      "incomeExcerpt": "。 十四、人民生活和社会保障 据抽样调查，全年全区居民人均可支配收入95176元，比上年增长4.6%；居民人均消费支出56844元，增长3.5%（见图2、表14）。 至年末，全区共"
+    },
+    "南京市": {
+      "mirror": "https://tjgb.hongheiku.com/djs/57850.html",
+      "archive": "https://github.com/chenfei2008c/china-local-debt-atlas/blob/a2d99de111863a75afe644747972b155a518bb4b/raw/province_fiscal/hongheiku/city_bulletin_snapshot.json",
+      "published": "2025-03-29",
+      "incomeExcerpt": "入248.85亿元。 九 人民生活和社会保障 全年全市居民人均可支配收入75180元，比上年增长4.3%。其中，工资性收入47118元，增长4.6%；经营净收入7570元，增长0.8%"
+    },
+    "苏州市": {
+      "mirror": "https://tjgb.hongheiku.com/xjtjgb/xj2020/63722.html",
+      "archive": "https://github.com/chenfei2008c/china-local-debt-atlas/blob/a2d99de111863a75afe644747972b155a518bb4b/raw/province_fiscal/hongheiku/city_bulletin_snapshot.json",
+      "published": "2025-06-04",
+      "incomeExcerpt": "51.0万人，比上年末增长1.1%。高新区城镇常住居民人均可支配收入83060元，增长4.5%；城镇常住居民人均消费支出52551元，增长4.1%。 社会保障持续改善。年末全区企业"
+    },
+    "杭州市": {
+      "mirror": "https://tjgb.hongheiku.com/djs/57316.html",
+      "archive": "https://github.com/chenfei2008c/china-local-debt-atlas/blob/a2d99de111863a75afe644747972b155a518bb4b/raw/province_fiscal/hongheiku/city_bulletin_snapshot.json",
+      "published": "2025-03-20",
+      "incomeExcerpt": "、人民生活和社会保障 根据城乡一体化住户调查，全年全市居民人均可支配收入76777元，比上年增长4.0%。按常住地分，城镇居民人均可支配收入83356元，增长3.4%；农村居民人均可支"
+    },
+    "武汉市": {
+      "mirror": "https://tjgb.hongheiku.com/djs/58204.html",
+      "archive": "https://github.com/chenfei2008c/china-local-debt-atlas/blob/a2d99de111863a75afe644747972b155a518bb4b/raw/province_fiscal/hongheiku/city_bulletin_snapshot.json",
+      "published": "2025-04-03",
+      "incomeExcerpt": "年增长12.1%。 十一、居民生活和社会保障 全年全市居民人均可支配收入59732元，比上年增长4.6%。按常住地分，城镇居民人均可支配收入64346元，增长4.3%；农村居民人均可支"
+    },
+    "广州市": {
+      "mirror": "https://tjgb.hongheiku.com/djs/58648.html",
+      "archive": "https://github.com/chenfei2008c/china-local-debt-atlas/blob/a2d99de111863a75afe644747972b155a518bb4b/raw/province_fiscal/hongheiku/city_bulletin_snapshot.json",
+      "published": "2025-04-08",
+      "incomeExcerpt": "All-resident income unavailable; urban and rural values not substituted."
+    },
+    "深圳市": {
+      "mirror": "https://tjgb.hongheiku.com/djs/62867.html",
+      "archive": "https://github.com/chenfei2008c/china-local-debt-atlas/blob/a2d99de111863a75afe644747972b155a518bb4b/raw/province_fiscal/hongheiku/city_bulletin_snapshot.json",
+      "published": "2025-05-23",
+      "incomeExcerpt": "增长24.7%。 九、居民收入消费和社会保障 全年全市居民人均可支配收入81123元，比上年增长5.5%。居民人均消费支出51415元，增长4.9%。全市居民恩格尔系数为29.2%，比"
+    },
+    "重庆市": {
+      "mirror": "https://tjgb.hongheiku.com/xjtjgb/xj2020/66408.html",
+      "archive": "https://github.com/chenfei2008c/china-local-debt-atlas/blob/a2d99de111863a75afe644747972b155a518bb4b/raw/province_fiscal/hongheiku/city_bulletin_snapshot.json",
+      "published": "2025-08-17",
+      "incomeExcerpt": "All-resident income unavailable; urban and rural values not substituted."
+    }
+  }
+}

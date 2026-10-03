@@ -1,0 +1,9 @@
+'use strict';
+window.ECONOMY_BASE=Object.fromEntries(CITIES.map(c=>[c.id,JSON.parse(JSON.stringify(c))]));
+window.applyVintage=function(year){
+ for(const c of CITIES){const base=ECONOMY_BASE[c.id];Object.assign(c,base);delete c.population;delete c.income;delete c.mirrorUrl;delete c.published;Object.assign(c,year===2025?ECONOMY_2025[c.id]:ECONOMY_2024_EXTRA[c.id]||{});if(year===2025)delete c.officialUrl;}
+};
+applyVintage(2025);
+let econMetric='income';
+window.economicExplorer=function(){const options={income:['居民年可支配收入','元 / 人 · 全体居民'],population:['年末常住人口','万人'],gdp:['地区生产总值','亿元 · 现价']},[label,unit]=options[econMetric],rows=[...CITIES].sort((a,b)=>(b[econMetric]||0)-(a[econMetric]||0)),max=Math.max(...rows.map(c=>c[econMetric]||0));return `<section class="panel inner economic-explorer"><div class="panel-heading"><div><div class="kicker">${state.vintage} / 多指标对照</div><h2>体量之外，看人和收入</h2></div><label>比较指标<select id="econ-metric">${Object.entries(options).map(([k,v])=>`<option value="${k}" ${k===econMetric?'selected':''}>${v[0]}</option>`).join('')}</select></label></div><div class="economic-bars">${rows.map(c=>`<button data-city="${c.id}" aria-pressed="${c.id===state.city}" class="economic-row ${c.id===state.city?'selected':''}"><b>${c.name}</b><span class="econ-track"><i style="width:${(c[econMetric]||0)/max*100}%"></i></span><strong>${typeof c[econMetric]==='number'?fmt(c[econMetric],econMetric==='income'?0:2):'暂缺'}</strong></button>`).join('')}</div><p class="caption">${label} · ${unit}。收入为全年人均指标，包含工资、经营、财产和转移收入，不能视作岗位月薪。重庆覆盖整个直辖市，含较大农村范围。2024 广州缺全体居民收入、成都补充指标暂缺。</p></section>`;};
+document.addEventListener('change',e=>{if(e.target.id==='vintage'){state.vintage=Number(e.target.value);applyVintage(state.vintage);render();}if(e.target.id==='econ-metric'){econMetric=e.target.value;render();}});

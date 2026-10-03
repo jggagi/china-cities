@@ -1,0 +1,14 @@
+import { cp, mkdir, rm, writeFile } from 'node:fs/promises';
+import { build } from 'esbuild';
+await rm('dist',{recursive:true,force:true});
+await mkdir('dist/server',{recursive:true});
+await cp('public','dist/client',{recursive:true});
+await mkdir('dist/client/vendor',{recursive:true});
+await cp('node_modules/leaflet/dist/leaflet.js','dist/client/vendor/leaflet.js');
+await cp('node_modules/leaflet/dist/leaflet.css','dist/client/vendor/leaflet.css');
+await cp('node_modules/leaflet/LICENSE','dist/client/vendor/leaflet-LICENSE.txt');
+await cp('node_modules/leaflet/dist/images','dist/client/vendor/images',{recursive:true});
+await build({entryPoints:['server/validation.js'],outfile:'dist/client/vendor/profile-validation.js',bundle:true,format:'iife',globalName:'ArchiveValidation',platform:'browser',target:'es2022'});
+await build({entryPoints:['server/worker.js'],outfile:'dist/server/index.js',bundle:true,format:'esm',platform:'browser',target:'es2022'});
+await writeFile('dist/server/wrangler.json',JSON.stringify({name:'china-city-atlas',main:'./index.js',compatibility_date:'2026-09-01',assets:{directory:'../client',binding:'ASSETS',run_worker_first:['/api/*']},d1_databases:[{binding:'DB',database_name:'city-atlas-archive',migrations_dir:'../../drizzle'}]},null,2));
+console.log('Built city atlas client and authenticated archive Worker.');
