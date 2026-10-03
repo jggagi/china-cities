@@ -1,0 +1,273 @@
+{
+  "research_date": "2026-10-03",
+  "vintage": 2024,
+  "unit_gdp": "亿元，名义GDP按现价",
+  "unit_growth": "实际同比增速，不变价格/可比价格",
+  "unit_population": "万人，2024年末常住人口",
+  "scope": "中国大陆行政市域：4直辖市中北京、上海、重庆上榜；地级市含所辖区县、县级市。排除港澳台；并非连续建成区/都市圈比较。",
+  "important_limits": [
+    "No universal browsing/search tool available; only allowed public GitHub resources used. Official URLs provided as reference from accessible mirrors, not directly read in this session.",
+    "2025 annual statistics exist by current date, but a complete genuinely verifiable ten-city 2025 dataset was not obtained. UI should say 2024年度对照 / 数据版本2024, never 最新排行榜.",
+    "No unsupported values filled into missing sectors, population or growth. Secondary-only fields need visible evidence limitations.",
+    "GDP initial numbers may be revised after statistical yearbook/economic census. Administrative boundaries differ sharply: Chongqing covers a province-sized territory. Use explanatory note adjacent to rank chart.",
+    "Do not calculate an official per capita GDP by dividing GDP by year-end population: official denominator often annual-average population. Any derived ratio should be named rough year-end-population ratio.",
+    "Livability scores and next-ten-year paths are author judgment/scenarios, not statistics or forecasts."
+  ],
+  "sources": {
+    "news-20250117": {
+      "type": "archived_financial_news",
+      "url": "https://github.com/Jessica-Zhangyj/dlquant/blob/6b245fa09cb628f3bcb812f0662bfef520e65fb4/data/news/20250117.csv",
+      "quote": "2025-01-17 14:46:56: Shanghai 2024 GDP 53926.71; real growth 5.0%; official 2023 GDP revised to 51404.47."
+    },
+    "news-20250119": {
+      "type": "archived_financial_news",
+      "url": "https://github.com/Jessica-Zhangyj/dlquant/blob/6b245fa09cb628f3bcb812f0662bfef520e65fb4/data/news/20250119.csv",
+      "quote": "2025-01-19 09:53:24: Chongqing government work report estimated GDP 3.2 trillion and real growth 5.7%."
+    },
+    "news-20250121": {
+      "type": "archived_financial_news",
+      "url": "https://github.com/Jessica-Zhangyj/dlquant/blob/6b245fa09cb628f3bcb812f0662bfef520e65fb4/data/news/20250121.csv",
+      "quote": "2025-01-21 15:21:56: Beijing 49843.1 and 5.2% real growth."
+    },
+    "news-20250122": {
+      "type": "archived_financial_news",
+      "url": "https://github.com/Jessica-Zhangyj/dlquant/blob/6b245fa09cb628f3bcb812f0662bfef520e65fb4/data/news/20250122.csv",
+      "quote": "2025-01-22 10:26:12: Chengdu 23511.3; growth 5.7%; sectors 540.1, 6752.9, 16218.3."
+    },
+    "news-20250126": {
+      "type": "archived_financial_news",
+      "url": "https://github.com/Jessica-Zhangyj/dlquant/blob/6b245fa09cb628f3bcb812f0662bfef520e65fb4/data/news/20250126.csv",
+      "quote": "2025-01-26 09:43:53: Shenzhen 36801.87 and 5.8%. 15:34:43: Wuhan 21106.23 and 5.2%."
+    },
+    "news-20250127": {
+      "type": "archived_financial_news",
+      "url": "https://github.com/Jessica-Zhangyj/dlquant/blob/6b245fa09cb628f3bcb812f0662bfef520e65fb4/data/news/20250127.csv",
+      "quote": "2025-01-27 13:29:37: Guangzhou GDP 31032.50; growth 2.1%; sectors 334.47, 7839.45, 22858.58. 14:13:03 Nanjing GDP 18500.81; growth 4.5%; sectors 331.00, 5831.06, 12338.75."
+    },
+    "population-curated": {
+      "type": "curated_official_source_rows",
+      "url": "https://github.com/Zenith1874/research-tools-suite/blob/eb4280c09d34ba9962e899c9c5ad6d10451670a6/services/city_bulletin_official_service.py",
+      "quote": "VERIFIED_OFFICIAL_ROWS records resident population in 万人 and exact official bulletin source URLs for Beijing, Shanghai, Guangzhou, Shenzhen, Suzhou and Nanjing. Curator asserts direct official verification; this session did not directly access official sites."
+    },
+    "suzhou-official-html": {
+      "type": "official_html_archived_by_third_party",
+      "url": "https://github.com/VictorMaxWang/-POI-/blob/e4a6e16accbb0ef5b6db3982cc21e65446812335/raw_official/population/SZ_POP_GB_2024.html",
+      "quote": "Initial GDP 26727.0; real growth 6.0%; sectors 202.0, 12516.7, 14008.3; shares 0.8:46.8:52.4; year-end resident population 1298.7."
+    },
+    "nanjing-official-html": {
+      "type": "official_html_archived_by_third_party",
+      "url": "https://github.com/VictorMaxWang/-POI-/blob/e4a6e16accbb0ef5b6db3982cc21e65446812335/raw_official/population/NJ_POP_GB_2024.html",
+      "quote": "Initial GDP 18500.81; real growth 4.5%; sectors 331.00, 5831.06, 12338.75; shares 1.8%,31.5%,66.7%; year-end population 957.70."
+    },
+    "aggregate-2024": {
+      "type": "educational_aggregate_unattributed",
+      "url": "https://github.com/yangdanyang2005/20251104_WebGIS_inclass_internship/blob/9d2420508ec73a19ba025a943b21ddd4ac74139d/static/data/sample.xml",
+      "quote": "2024 top 50 city GDP values. Not authoritative and should not be presented as official verification. Top 10 membership agrees with known 2024 ranking, and Nanjing above Ningbo (18147.70)."
+    },
+    "shanghai-secondary": {
+      "type": "secondary_research_page",
+      "url": "https://github.com/zzht1/zzht1.github.io/blob/724cf9e1327c2844a8f128134ab9940edd64b2c7/city-growth.html",
+      "quote": "Shanghai GDP53926.71; growth5.0%; population2480.26; sectors0.2:21.6:78.2. No citation links in page."
+    },
+    "chengdu-curated": {
+      "type": "curated_source_linked_json",
+      "url": "https://github.com/mildred522/market-pilot/blob/d91e0a5d1c7016c0d9d31b733e47e60941b65f7d/backend/data/reference/cities/chengdu/2025.json",
+      "quote": "Period2024 resident population2147.4, GDP23511.3, tertiary share69.0; exact Chengdu Daily original bulletin PDF URL."
+    },
+    "hangzhou-secondary": {
+      "type": "secondary_research_notes",
+      "url": "https://github.com/corenel/today-i-learned/blob/ddfbc797da761bd44c5b29062a5fa1343718785c/weekly/2026/2026W19/README.zh-CN.md",
+      "quote": "Hangzhou2024 GDP21860; tertiary share73%; population1262.4; digital economy core industry share28.8%. Writer attributes to statistical bulletin, no direct primary extract."
+    }
+  },
+  "cities": [
+    {
+      "rank": 1,
+      "name": "上海",
+      "gdp": 53926.71,
+      "real_growth": 5,
+      "population_wan": 2480.26,
+      "sectors_share_percent": [
+        0.2,
+        21.6,
+        78.2
+      ],
+      "status": "GDP and growth verified against archived news quoting official release; population against curated official-source rows; sector shares from a separate secondary page, not official HTML.",
+      "official_reference": "https://tjj.sh.gov.cn/tjgb/20250324/a7fe18c6d5c24d66bfca89c5bb4cdcfb.html",
+      "evidence": [
+        "news-20250117",
+        "population-curated",
+        "shanghai-secondary"
+      ],
+      "sector_status": "secondary_only"
+    },
+    {
+      "rank": 2,
+      "name": "北京",
+      "gdp": 49843.1,
+      "real_growth": 5.2,
+      "population_wan": 2183.2,
+      "sectors_share_percent": null,
+      "status": "GDP and growth verified against archived news quoting official 2024 release; population against curated official-source rows; no verified sectors.",
+      "official_reference": "https://www.beijing.gov.cn/gongkai/shuju/tjgb/202505/t20250529_4102086.html",
+      "evidence": [
+        "news-20250121",
+        "population-curated"
+      ]
+    },
+    {
+      "rank": 3,
+      "name": "深圳",
+      "gdp": 36801.87,
+      "real_growth": 5.8,
+      "population_wan": 1798.95,
+      "sectors_share_percent": null,
+      "status": "GDP and growth verified against archived news quoting Shenzhen statistics bureau; population against curated official-source rows; no verified sectors.",
+      "official_reference": "https://www.sz.gov.cn/cn/xxgk/zfxxgj/tjsj/tjgb/content/mpost_12190855.html",
+      "evidence": [
+        "news-20250126",
+        "population-curated"
+      ]
+    },
+    {
+      "rank": 4,
+      "name": "重庆",
+      "gdp": 32193.15,
+      "real_growth": 5.7,
+      "population_wan": null,
+      "sectors_share_percent": null,
+      "status": "Exact GDP found only in educational aggregate XML; 5.7% growth in archived government-work-report estimate (2025-01-19). Exact GDP must be marked lower confidence. No verified 2024 population/sectors.",
+      "official_reference": "https://www.cq.gov.cn/zwgk/zfxxgkzl/fdzdgknr/tjxx/tjgb/",
+      "evidence": [
+        "aggregate-2024",
+        "news-20250119"
+      ],
+      "gdp_status": "aggregate_only",
+      "growth_status": "government_estimate_report"
+    },
+    {
+      "rank": 5,
+      "name": "广州",
+      "gdp": 31032.5,
+      "real_growth": 2.1,
+      "population_wan": 1897.8,
+      "sectors_value_yi": [
+        334.47,
+        7839.45,
+        22858.58
+      ],
+      "sectors_share_percent": [
+        1.08,
+        25.26,
+        73.66
+      ],
+      "status": "GDP, growth and 3 sector values verified against archived news quoting unified accounting. Shares calculated from values. Population against curated official-source rows.",
+      "official_reference": "https://tjj.gz.gov.cn/gkmlpt/content/10/10203/mpost_10203416.html",
+      "evidence": [
+        "news-20250127",
+        "population-curated"
+      ],
+      "sector_status": "derived_from_reported_values"
+    },
+    {
+      "rank": 6,
+      "name": "苏州",
+      "gdp": 26727,
+      "real_growth": 6,
+      "population_wan": 1298.7,
+      "sectors_value_yi": [
+        202,
+        12516.7,
+        14008.3
+      ],
+      "sectors_share_percent": [
+        0.8,
+        46.8,
+        52.4
+      ],
+      "status": "All four fields read from archived official HTML on GitHub. GDP should retain bulletin precision 26727.0, not 26726.98 from aggregator reports.",
+      "official_reference": "https://tjj.suzhou.gov.cn/sztjj/tjgb/202504/c77512c90a144784beba4870a6b5cc0d.shtml",
+      "evidence": [
+        "suzhou-official-html"
+      ],
+      "sector_status": "official_html_mirror"
+    },
+    {
+      "rank": 7,
+      "name": "成都",
+      "gdp": 23511.3,
+      "real_growth": 5.7,
+      "population_wan": 2147.4,
+      "sectors_value_yi": [
+        540.1,
+        6752.9,
+        16218.3
+      ],
+      "sectors_share_percent": [
+        2.3,
+        28.7,
+        69
+      ],
+      "status": "GDP, growth and sector values read from archived news quoting official release; population and tertiary share cross checked in curated source-linked JSON. Full original bulletin PDF not accessed.",
+      "official_reference": "https://www.cdrb.com.cn/epaper/cdrbpc/202503/28/fa12d091-7d6d-4a6f-b325-46dcd25f4609.pdf",
+      "evidence": [
+        "news-20250122",
+        "chengdu-curated"
+      ],
+      "sector_status": "derived_from_reported_values"
+    },
+    {
+      "rank": 8,
+      "name": "杭州",
+      "gdp": 21860,
+      "real_growth": null,
+      "population_wan": 1262.4,
+      "sectors_share_percent": null,
+      "status": "GDP 21860 and population 1262.4 read from a secondary research note referencing statistical bulletin. Educational aggregate says 21860.32 but no original evidence for decimals; use 21860 only. Known growth often reported as 4.7%, but not verified in this bounded research, so leave null. Secondary source says tertiary share 73%, not enough for full sector chart.",
+      "official_reference": "https://tjgb.hongheiku.com/djs/57316.html",
+      "evidence": [
+        "hangzhou-secondary",
+        "aggregate-2024"
+      ],
+      "gdp_status": "secondary_only",
+      "population_status": "secondary_only"
+    },
+    {
+      "rank": 9,
+      "name": "武汉",
+      "gdp": 21106.23,
+      "real_growth": 5.2,
+      "population_wan": null,
+      "sectors_share_percent": null,
+      "status": "GDP and growth read from archived news quoting unified accounting. No verified 2024 population/sectors in accessible sources. Do not use remembered population as verified.",
+      "official_reference": "https://tjj.wuhan.gov.cn/tjfw/tjgb/",
+      "evidence": [
+        "news-20250126"
+      ]
+    },
+    {
+      "rank": 10,
+      "name": "南京",
+      "gdp": 18500.81,
+      "real_growth": 4.5,
+      "population_wan": 957.7,
+      "sectors_value_yi": [
+        331,
+        5831.06,
+        12338.75
+      ],
+      "sectors_share_percent": [
+        1.8,
+        31.5,
+        66.7
+      ],
+      "status": "All four fields read from archived official HTML on GitHub; GDP, growth and sectors independently cross checked in archived news.",
+      "official_reference": "https://tjj.nanjing.gov.cn/njstjj/202504/t20250401_5108470.html",
+      "evidence": [
+        "nanjing-official-html",
+        "news-20250127"
+      ],
+      "sector_status": "official_html_mirror"
+    }
+  ]
+}

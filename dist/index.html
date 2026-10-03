@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#101b2d">
+<title>城市图鉴 · 中国 GDP 十强</title><meta name="description" content="用地图、产业图谱、宜居偏好、历史时间线与未来情景，探索中国2024年GDP十强城市。">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23101b2d'/%3E%3Cpath d='M7 23V13h5v10m2 0V8h5v15m2 0V17h4v6' stroke='%23ff795f' stroke-width='3' fill='none'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css"><script src="data.js" defer></script><script src="profiles.js" defer></script><script src="app.js" defer></script><script src="explore.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">跳至内容</a>
+<aside class="sidebar">
+<a class="brand" href="#overview"><span class="brand-icon">城</span><span>城市图鉴<small>CITY ATLAS / CHINA</small></span></a>
+<div class="sidebar-label">探索视角</div>
+<nav aria-label="探索视角">
+<button data-view="overview" class="nav active"><span>◈</span>城市总览</button>
+<button data-view="industry" class="nav"><span>▦</span>产业图谱</button>
+<button data-view="living" class="nav"><span>◎</span>宜居实验室</button>
+<button data-view="history" class="nav"><span>◷</span>历史脉络</button>
+<button data-view="future" class="nav"><span>✦</span>未来十年</button>
+<button data-view="sources" class="nav"><span>≡</span>数据与口径</button>
+</nav>
+<div class="sidebar-note"><span class="tiny-line"></span><b>十座城市，十种答案。</b><p>从经济规模出发，<br>看见城市的不同面貌。</p><span class="edition">2024 DATA EDITION</span></div>
+</aside>
+<div class="workspace">
+<header class="topbar"><span id="breadcrumb">中国 / 城市总览</span><div><span class="data-badge">2024 年统一基准</span><button class="quiet" id="method-btn">数据说明</button></div></header>
+<main id="main" tabindex="-1">
+<div class="page-head"><div><div class="eyebrow">TEN CITIES. MANY POSSIBILITIES.</div><h1 id="page-title">读懂中国的经济大城<span>。</span></h1><p id="page-subtitle">点击地图或城市，探索经济体量背后的产业与生活。</p></div><div class="head-index"><b>10</b><span>座城市<br>多重视角</span></div></div>
+<div class="toolbar"><div class="view-tabs" aria-label="地图指标"><button data-metric="gdp" class="selected">GDP 总量</button><button data-metric="growth">实际增速</button></div><div class="filters"><label class="sr-only" for="region">城市群</label><select id="region"><option value="all">全部城市群</option><option value="长三角">长三角</option><option value="珠三角">珠三角</option><option value="成渝">成渝</option><option value="京津冀">京津冀</option><option value="长江中游">长江中游</option></select><label class="sr-only" for="search">搜索城市或产业</label><input id="search" placeholder="搜索城市 / 产业" type="search"></div></div>
+<section id="content" aria-live="polite"></section>
+<footer><span>城市图鉴 / 中国大陆 · 2024 年经济基准</span><button class="text-btn" id="footer-sources">来源、范围与方法</button></footer>
+</main>
+</div>
+<div id="toast" role="status"></div>
+</body></html>
